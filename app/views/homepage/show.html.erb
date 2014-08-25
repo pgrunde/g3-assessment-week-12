@@ -1,0 +1,8 @@
+<h1>Cageflix</h1>
+<h3>Netflix for Nic Cage movies</h3>
+<%= link_to "Add Movie", new_flick_path %>
+<br>
+<% @flicks.each do |flx| %>
+  <h4><%= flx.name %> (<%= flx.year %>)</h4><br>
+  <p><%= flx.synopsis %></p>
+<% end %>
